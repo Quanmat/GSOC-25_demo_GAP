@@ -8,6 +8,7 @@ To run:
 ```bash  
 nextflow run main.nf --fasta <assembly.fasta> [--chunk_size 5000]
 
+```
 ## Telomeric Repeat Detection (tidk find)  
 ### Usage  
 1. Specify the clade in `nextflow.config` or via CLI:  
