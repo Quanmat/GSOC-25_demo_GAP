@@ -7,13 +7,13 @@ Just some examples to have better understanding of the GAP project, under GSOC'2
  **Window Size**: Adjust via `--window_size` (default: 5000 bp).  
    ```bash  
    nextflow run main.nf --input genome.fa --window_size 10000
-
+   ```
 ## Inverted Repeat Detection (einverted)  
 ### Usage  
 **Window Size**: Adjust via `--window_size` (default: 5000 bp).  
    ```bash  
    nextflow run main.nf --input genome.fa --window_size 10000  
-
+   ```
 ## TRF Module  
 To run:  
 ```bash  
