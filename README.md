@@ -9,8 +9,15 @@ To run:
 nextflow run main.nf --fasta <assembly.fasta> [--chunk_size 5000]
 
 ```
-## Telomeric Repeat Detection (tidk find)  
-### Usage  
-1. Specify the clade in `nextflow.config` or via CLI:  
-   ```bash  
-   nextflow run main.nf --input genome.fa --clade Lepidoptera  
+## Telomeric Analysis  
+### Tools  
+1. **tidk find**: Identifies clade-specific telomeric repeats.  
+2. **telo_finder**: Finds regions matching a user-defined motif (e.g., `TTAGGG`).  
+
+### Parameters  
+- `--clade`: Clade for `tidk find` (e.g., "Lepidoptera").  
+- `--teloseq`: Telomeric motif for `telo_finder` (default: `TTAGGG`).  
+
+### Outputs  
+- `results/tidk_find/`: Clade-specific repeats.  
+- `results/telo_finder/`: Motif-specific regions.  
