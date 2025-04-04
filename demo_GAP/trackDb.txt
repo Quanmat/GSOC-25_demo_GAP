@@ -1,0 +1,3 @@
+track type=bigBed name="TRF Tandem Repeats" description="TRF repeats (window=5000bp)" bigDataUrl=https://your-bucket/trf.bb  
+
+track type=bigBed name="Telomeric Repeats" description="tidk-identified clade-specific telomeres (clade: ${params.clade})" color=255,0,0 bigDataUrl=genome_find.bb  

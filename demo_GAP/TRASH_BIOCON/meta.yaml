@@ -1,0 +1,61 @@
+{% set name = "trash" %}  
+{% set version = "1.0" %}  # Update to match TRASH's latest release  
+
+package:  
+  name: {{ name }}  
+  version: {{ version }}  
+
+source:  
+  git_url: https://github.com/vlothec/TRASH.git  
+  git_rev: master  # Replace with a specific commit/tag for stability  
+
+build:  
+  number: 0  
+  script: |  
+    # Install TRASH into Conda's bin/  
+    mkdir -p $PREFIX/bin  
+    cp TRASH_run.sh $PREFIX/bin/  
+    cp -r src/ $PREFIX/bin/  
+    chmod +x $PREFIX/bin/TRASH_run.sh  
+
+requirements:  
+  build:  
+    - autoconf  
+    - automake  
+    - make  
+    - gcc  # For compiling C components  
+  host:  
+    - r-base >=4.4.2  
+    - r-stringr  
+    - r-biostrings  
+    - r-seqinr  
+    - r-doparallel  
+    - r-circlize  
+    - r-pwalign  
+    - r-stringdist  
+    - zlib  
+    - libcurl  
+  run:  
+    - r-base >=4.4.2  
+    - ucsc-bedtobigbed  # For bedToBigBed  
+
+test:  
+  commands:  
+    - TRASH_run.sh --help  
+
+about:  
+  home: https://github.com/vlothec/TRASH  
+  license: MIT  
+  summary: "Tandem Repeat Annotation and Structural Hierarchy"  
+
+
+
+# Building and testing locally - 
+ 
+conda install conda-build  
+
+conda build trash/  
+
+conda create -n trash-test --use-local trash  
+conda activate trash-test  
+TRASH_run.sh --help    

@@ -1,0 +1,17 @@
+# Use minimal Python base image
+FROM python:3.9-slim
+
+# Install system tools + UCSC utilities
+RUN apt-get update && apt-get install -y \  
+    git wget zlib1g-dev libcurl4-openssl-dev \  
+ && wget -q https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/{bedSort,bedToBigBed} \  
+    && chmod +x bedSort bedToBigBed \  
+    && mv bedSort bedToBigBed /usr/local/bin/  
+
+# Install ModDotPlot with version-locked dependencies
+RUN git clone https://github.com/marbl/ModDotPlot.git /opt/ModDotPlot \  
+ && cd /opt/ModDotPlot \  
+ && pip install . plotnine==0.12.4  # Ensure compatibility  
+
+# Validate installation
+RUN moddotplot static --help
