@@ -2,13 +2,13 @@
 FROM ubuntu:22.04  
 RUN apt-get update && apt-get install -y \  
     git make python3 samtools wget  
-# Install TRF  
+# Installing TRF  
 RUN git clone https://github.com/Benson-Genomics-Lab/TRF.git && \  
     cd TRF && make && cp trf /usr/local/bin/  
-# Install UCSC tools  
+# Installing UCSC tools  
 RUN wget https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/{bedSort,bedToBigBed} && \  
     chmod +x bedSort bedToBigBed && mv bedSort bedToBigBed /usr/local/bin/  
-# Add GDA scripts  
+# Adding GDA scripts  
 COPY bin/*.py /usr/local/bin/  
 RUN chmod +x /usr/local/bin/*.py  
 
@@ -27,20 +27,19 @@ RUN chmod +x /usr/local/bin/*.py
 
 
 
-# ltrdigest - 
+######## ltrdigest - 
 
-# Base image with Nextflow compatibility  
 FROM nfcore/base:2.0  
 
-# Install GenomeTools (LTRharvest/LTRdigest)  
+# Installing GenomeTools (LTRharvest/LTRdigest)  
 RUN apt-get update && apt-get install -y genometools genometools-extra  
 
-# Install UCSC tools for BED processing  
+# Installing UCSC tools (for BED processing)
 RUN wget https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/{bedSort,bedToBigBed} \  
     && chmod +x bedSort bedToBigBed \  
     && mv bedSort bedToBigBed /usr/local/bin/  
 
-# Copy GDA scripts  
+# Copying GDA scripts  
 COPY bin/trf_repeat_density_to_gff.py /usr/local/bin/  
 COPY bin/ltrdigest_to_bed.py /usr/local/bin/  
 COPY bin/ltr_density_sliding_window.py /usr/local/bin/  

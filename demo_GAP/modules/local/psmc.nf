@@ -1,6 +1,6 @@
 process PSMC {  
   tag "${meta.sample}"  
-  container 'your/psmc-container:latest'  
+  container 'our/psmc-container:latest'  
 
   input:  
   tuple val(meta), path(fq)  

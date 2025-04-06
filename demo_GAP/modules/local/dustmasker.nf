@@ -13,8 +13,8 @@ process DUSTMASKER {
     script:  
     def prefix = fasta.baseName  
     """  
-    Steps in short - 
-    
+    Steps In shorts -------------->
+
     # Step 1: Convert FASTA to uppercase (GDA convention)  
     seqtk seq -U $fasta > ${prefix}_uppercase.fa  
 

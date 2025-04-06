@@ -1,10 +1,10 @@
 process LTR_RETROTRANSPOSONS {  
   tag "${assembly_id}"  
-  container 'your-ltr-container:1.0.0'  
+  container 'our-ltr-container:1.0.0'  
   input:  
     path fasta  
     path chrom_sizes  
-    val chunk_size : 5000  // Default window size (matching TRF)  
+    val chunk_size : 5000  // Default window size (matching with TRF)  
 
   output:  
     path "*.gff3", emit: gff      // LTRdigest annotations  
@@ -14,8 +14,8 @@ process LTR_RETROTRANSPOSONS {
   script:  
     def prefix = fasta.baseName  
     """  
-    In short key steps - 
-    
+    Steps In shorts -------------->
+
     # Step 1: Run LTRharvest + LTRdigest  
     ltrharvest -sequence ${fasta} -out ${prefix}_ltrharvest.gff3 -minlenltr 100 -maxlenltr 6000 -similar 85  
     ltrdigest -hmms gydb_hmms ${prefix}_ltrharvest.gff3 ${fasta} > ${prefix}_ltrdigest.gff3  

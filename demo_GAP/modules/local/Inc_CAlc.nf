@@ -1,4 +1,5 @@
-// Split genome into 10Mb chunks
+// Split genome into 10Mb chunks, as an example   ------ (can always choose to fo for 1mb windows)
+
 CHUNKS = channel.fromFilePairs("${params.genmap.regions_dir}/*.bed")
 
 GENMAP_MAP

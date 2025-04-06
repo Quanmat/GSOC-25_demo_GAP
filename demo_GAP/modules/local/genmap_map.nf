@@ -1,7 +1,7 @@
 process GENMAP_MAP {
   tag "${meta.id}"
   label 'process_high'
-  container 'your-container-with-genmap:1.3.0'
+  container 'our-container-with-genmap:1.3.0'
 
   input:
   tuple val(meta), path(index)
@@ -13,7 +13,7 @@ process GENMAP_MAP {
 
   script:
   def regions_flag = regions ? "--selection $regions" : ""
-  def args = task.ext.args ?: "--k 100 --mismatches 4" // Default parameters
+  def args = task.ext.args ?: "--k 100 --mismatches 4" // Default params
   
   """
   genmap map \\

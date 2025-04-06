@@ -1,7 +1,8 @@
-####### Optional masking ####
+// ####### Optional masking ####
+
 process MASK_NS {  
   tag "${assembly_id}"  
-  container 'your-biocontainer:1.0.0'  
+  container 'our-biocontainer:1.0.0'  
 
   input:  
     path fasta  

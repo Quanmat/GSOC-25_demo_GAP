@@ -13,7 +13,7 @@ process EINVERTED {
     script:  
     def prefix = fasta.baseName  
     """  
-    Steps in short -
+    Steps In shorts -------------->
 
     # Step 1: Run einverted (GDA parameters)  
     einverted -sequence $fasta \  

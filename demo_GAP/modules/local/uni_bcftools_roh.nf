@@ -20,6 +20,8 @@ process BCFTOOLS_ROH {
   def window_size = params.window_size ?: 100000  
 
   """  
+    Steps In shorts -------------->    -
+
   # Step 1: Run bcftools roh once  
   bcftools roh \\  
     -G \\  

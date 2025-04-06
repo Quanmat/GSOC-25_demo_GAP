@@ -6,7 +6,7 @@ process TRASH {
   input:  
     path fasta                // Input FASTA (masked or unmasked)  
     path chrom_sizes          // Chromosome sizes (from samtools faidx)  
-    val params                // TRASH parameters  
+    val params                // TRASH params
 
   output:  
     path "*.gff", emit: gff            // GFF annotations  
@@ -19,8 +19,8 @@ process TRASH {
     def trash_params = params.trash ?: "--k 10 --win 1000 --t 5"  
 
     """  
-    Steps in short -
-    
+     Steps In shorts -------------->
+
     # Step 1: Run TRASH  
     conda run -n trash-env TRASH_run.sh ${fasta} --o ./ ${trash_params}  
 

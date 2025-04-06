@@ -1,6 +1,6 @@
 process RAISD {
   tag "${meta.sample}"
-  container 'your-raisd-container:latest'
+  container 'our-raisd-container:latest'
   publishDir "results/raisd", mode: 'copy'
 
   input:

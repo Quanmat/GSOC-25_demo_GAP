@@ -18,6 +18,8 @@ process BCFTOOLS_ROH {
   def map_cmd = genetic_map ? "--genetic-map $genetic_map" : "--rec-rate 1e-8"  
 
   """  
+    Steps In shorts -------------->
+  
   # Run bcftools ROH  
   bcftools roh \\  
     -G \\  
@@ -29,7 +31,7 @@ process BCFTOOLS_ROH {
   # Convert to BED  
   awk 'NR>1 && \$6 == "HOM" {print \$2 "\t" \$3 "\t" \$4}' ${meta.sample}.roh > ${meta.sample}_roh.bed  
 
-  # Optional: Visualize  
+  # * Optionally: Visualize  
   roh-viz -i ${meta.sample}.roh -v $vcf -o ${meta.sample}_roh.html  
   """  
 }  

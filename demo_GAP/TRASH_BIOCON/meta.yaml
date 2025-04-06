@@ -1,5 +1,5 @@
 {% set name = "trash" %}  
-{% set version = "1.0" %}  # Update to match TRASH's latest release  
+{% set version = "1.0" %}  # Will Update to match TRASH's latest release  (v2)
 
 package:  
   name: {{ name }}  
@@ -7,7 +7,7 @@ package:
 
 source:  
   git_url: https://github.com/vlothec/TRASH.git  
-  git_rev: master  # Replace with a specific commit/tag for stability  
+  git_rev: master 
 
 build:  
   number: 0  
@@ -23,7 +23,7 @@ requirements:
     - autoconf  
     - automake  
     - make  
-    - gcc  # For compiling C components  
+    - gcc  # (For compiling C components)
   host:  
     - r-base >=4.4.2  
     - r-stringr  

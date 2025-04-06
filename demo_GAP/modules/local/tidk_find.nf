@@ -9,7 +9,7 @@ process TIDK_FIND {
 
     input:  
     tuple val(meta), path(fasta)  
-    val(clade)  // Eg -  "Lepidoptera"  
+    val(clade)  // Eg - "Lepidoptera"  
 
     output:  
     tuple val(meta), path("${prefix}_find.tsv"), path("${prefix}_find.bb"), emit: results  
@@ -18,7 +18,7 @@ process TIDK_FIND {
     script:  
     def prefix = fasta[0].toString().replaceAll(/(\.fa)?\.gz/, '')  
     """  
-    In short key steps- 
+    Steps In shorts -------------->   -
 
     # Step 1: Run tidk find  
     tidk find -c "$clade" -o "$prefix" -d ./ "$fasta"  

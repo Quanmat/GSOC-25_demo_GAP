@@ -1,6 +1,5 @@
 ################ Example - (for TRASH setup) - 
 
-# Use a Conda base image  
 FROM continuumio/miniconda3:latest  
 
 # dependencies  
@@ -10,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     zlib1g-dev \  
     libcurl4-openssl-dev \  
     libxml2-dev  
+
 
 # Create Conda environment (for TRASH)
 RUN conda create -n trash-env -c conda-forge \  
@@ -30,9 +30,9 @@ RUN cd /opt/TRASH && \
     chmod +x TRASH_install.sh && \  
     conda run -n trash-env ./TRASH_install.sh --def  
 
-# UCSC tools for BED processing  -
+# UCSC tools (for BED processing)  -
 RUN wget -q https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/{bedSort,bedToBigBed} \  
     && chmod +x bedSort bedToBigBed \  
-    && mv bedSort bedToBigBed /usr/local/bin/  
+     && mv bedSort bedToBigBed /usr/local/bin/  
 
 ENV PATH="/opt/TRASH:${PATH}"  

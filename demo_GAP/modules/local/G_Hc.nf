@@ -8,5 +8,5 @@ total_length=$(awk 'NR>1 {sum += $4-$3} END {print sum}' sample.roh)
 global_het=$(echo "$total_het / $total_length" | bc -l)  
 
 
-//  Save Results - 
+// Results saving  - 
 echo "Global Heterozygosity: $global_het" > sample_heterozygosity.txt  
