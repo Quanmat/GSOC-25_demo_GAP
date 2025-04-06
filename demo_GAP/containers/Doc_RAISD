@@ -1,0 +1,17 @@
+FROM your-existing-pipeline-container:latest
+
+# Install RAiSD dependencies
+RUN apt-get update && apt-get install -y \
+    r-base \
+    libgsl-dev \
+    zlib1g-dev \
+    gnuplot
+
+# Install R packages for plotting
+RUN Rscript -e "install.packages('ggplot2', repos='https://cran.r-project.org')"
+
+# Install RAiSD
+RUN git clone https://github.com/alachins/raisd.git /opt/raisd && \
+    cd /opt/raisd && \
+    ./install-RAiSD-GSL.sh && \
+    ln -s /opt/raisd/bin/release/RAiSD /usr/local/bin/

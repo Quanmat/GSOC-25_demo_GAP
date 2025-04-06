@@ -1,0 +1,7 @@
+java -Xmx8G -jar snpEff/snpEff.jar \  
+    -v \  
+    -stats annotated_variants.html \  
+    -csvStats annotated_variants.csv \  
+    GRCh38.99 \  
+    input_variants.vcf \  
+    > annotated_variants.vcf  

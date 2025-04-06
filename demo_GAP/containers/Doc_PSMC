@@ -1,0 +1,12 @@
+FROM biocontainers/bcftools:1.17  
+
+# Install PSMC  
+RUN apt-get update && apt-get install -y git gnuplot  
+RUN git clone https://github.com/lh3/psmc.git \  
+  && cd psmc \  
+  && make \  
+  && cd utils \  
+  && make \  
+  && cp * ../ \  
+  && cd .. \  
+  && mv psmc /usr/local/bin/  
