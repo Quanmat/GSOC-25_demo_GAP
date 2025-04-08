@@ -12,8 +12,8 @@ process HET_DISTRIBUTION {
 
   script:
   """
-      Steps In shorts -------------->
-      
+
+
   # Extract heterozygous sites
   bcftools query -i 'GT="het"' -f '%CHROM\\t%POS\\t%POS\\n' $vcf \
     | awk '{print \$1 "\t" \$2 "\t" \$2+1 "\t1"}' > het_sites.bed

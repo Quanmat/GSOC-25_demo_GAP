@@ -1,0 +1,6 @@
+RUN apt-get install -y mafft blast2 libgsl-dev r-base \
+    && curl -OL https://github.com/pangenome/pggb/releases/download/v0.5.3/pggb \
+    && chmod +x pggb \
+    && R -e "install.packages(c('kmer', 'getopt', 'Biostrings', 'data.table'), repos='https://cloud.r-project.org')" \
+    && wget https://github.com/piosierra/pantera/raw/main/pantera.R -O /usr/local/bin/pantera.R \
+    && chmod +x /usr/local/bin/pantera.R
