@@ -50,6 +50,7 @@ nextflow run main.nf --fasta <assembly.fasta> [--chunk_size 5000]
 - Sanger Guidelines - https://pipelines.tol.sanger.ac.uk/docs/contributing/review_checklist
 - Bedtools -  https://bedtools.readthedocs.io/en/latest/  
 - bedtobigBed - https://www.encodeproject.org/software/bedToBigBed/
+- Some Genome assemblies datasets I found online - NCBI - https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/
 
 ### Sequence compostion - 
 https://github.com/sanger-tol/sequencecomposition
@@ -67,11 +68,8 @@ https://github.com/sanger-tol/sequencecomposition
 
 - ModDotPlot - https://github.com/marbl/ModDotPlot
   
-Mappability tracks - 
+#### Mappability tracks - 
  - Genmap - https://nf-co.re/modules/genmap_map/
- 
-Some Genome assemblies datasets I found online - 
- - NCBI - https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/
  
 ### Variant calling/composition- 
 Variant Calling - https://github.com/sanger-tol/variantcalling/tree/main
