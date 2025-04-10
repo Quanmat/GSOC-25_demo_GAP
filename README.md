@@ -42,12 +42,17 @@ nextflow run main.nf --fasta <assembly.fasta> [--chunk_size 5000]
 - nf core - https://nf-co.re/docs/
 - Sanger-tol - https://github.com/sanger-tol
 - GAP database - https://gap.cog.sanger.ac.uk/
+- Project Board - https://github.com/orgs/sanger-tol/projects/3/views/23
 - All pipelines - https://pipelines.tol.sanger.ac.uk/genome_after_party
 - Genome Assembly - https://github.com/sanger-tol/genomeassembly
+- fasta_windows - https://github.com/tolkit/fasta_windows
 - All file formats info - https://genome.ucsc.edu/FAQ/FAQformat.html
 - Sanger Guidelines - https://pipelines.tol.sanger.ac.uk/docs/contributing/review_checklist
+- Bedtools -  https://bedtools.readthedocs.io/en/latest/  
+- bedtobigBed - https://www.encodeproject.org/software/bedToBigBed/
 
 ### Sequence compostion - 
+https://github.com/sanger-tol/sequencecomposition
 
 #### Simple repet annotation tools - 
  - refer GDA pipeline - https://github.com/sanger-tol/gda
@@ -56,6 +61,9 @@ nextflow run main.nf --fasta <assembly.fasta> [--chunk_size 5000]
     - telomere finder - https://pipelines.tol.sanger.ac.uk/treeval/1.2.2/output#telo-finder
 #### Advanced repeat annotation tools -
  - TRASH - https://github.com/vlothec/TRASH
+ - Earlgrey - https://github.com/TobyBaril/EarlGrey
+    - more info - https://academic.oup.com/mbe/article/41/4/msae068/7635926?login=true
+ - Pantera - https://github.com/piosierra/pantera 
 
 - ModDotPlot - https://github.com/marbl/ModDotPlot
   
@@ -65,13 +73,14 @@ Mappability tracks -
 Some Genome assemblies datasets I found online - 
  - NCBI - https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/
  
-Variant calling - https://github.com/sanger-tol/variantcalling/tree/main
+### Variant calling/composition- 
+Variant Calling - https://github.com/sanger-tol/variantcalling/tree/main
  - deepvariant - https://github.com/google/deepvariant
  - PSMC - https://github.com/lh3/psmc
  - RaisD - https://github.com/alachins/raisd
  - SnpEff - https://github.com/pcingola/SnpEff
-   
-Info on SnpEff and SnpSift
-  
+   - Info on SnpEff and SnpSift: https://pcingola.github.io/SnpEff/snpeff/introduction/ 
+ - Samtools RoH - https://samtools.github.io/bcftools/howtos/roh-calling.html
+
   
 
