@@ -38,37 +38,40 @@ nextflow run main.nf --fasta <assembly.fasta> [--chunk_size 5000]
  
 
 # References
-Nextflow - https://www.nextflow.io/
-nf core - https://nf-co.re/docs/
-Sanger-tol - https://github.com/sanger-tol
-GAP database - https://gap.cog.sanger.ac.uk/
-All pipelines - https://pipelines.tol.sanger.ac.uk/genome_after_party
-Genome Assembly - https://github.com/sanger-tol/genomeassembly
-All file formats info - https://genome.ucsc.edu/FAQ/FAQformat.html
-Sanger Guidelines - https://pipelines.tol.sanger.ac.uk/docs/contributing/review_checklist
+- Nextflow - https://www.nextflow.io/
+- nf core - https://nf-co.re/docs/
+- Sanger-tol - https://github.com/sanger-tol
+- GAP database - https://gap.cog.sanger.ac.uk/
+- All pipelines - https://pipelines.tol.sanger.ac.uk/genome_after_party
+- Genome Assembly - https://github.com/sanger-tol/genomeassembly
+- All file formats info - https://genome.ucsc.edu/FAQ/FAQformat.html
+- Sanger Guidelines - https://pipelines.tol.sanger.ac.uk/docs/contributing/review_checklist
 
-Sequence compostion - 
+### Sequence compostion - 
 
-Simple repet annotation tools - 
- refer GDA pipeline - https://github.com/sanger-tol/gda
- Telomeric annotations - 
-    treeval - https://github.com/sanger-tol/treeval  
-    telomere finder - https://pipelines.tol.sanger.ac.uk/treeval/1.2.2/output#telo-finder
-Advanced repeat annotation tools -
- TRASH - https://github.com/vlothec/TRASH
-ModDotPlot - https://github.com/marbl/ModDotPlot
+#### Simple repet annotation tools - 
+ - refer GDA pipeline - https://github.com/sanger-tol/gda
+ - Telomeric annotations - 
+    - treeval - https://github.com/sanger-tol/treeval  
+    - telomere finder - https://pipelines.tol.sanger.ac.uk/treeval/1.2.2/output#telo-finder
+#### Advanced repeat annotation tools -
+ - TRASH - https://github.com/vlothec/TRASH
+
+- ModDotPlot - https://github.com/marbl/ModDotPlot
+  
 Mappability tracks - 
- Genmap - https://nf-co.re/modules/genmap_map/
+ - Genmap - https://nf-co.re/modules/genmap_map/
  
 Some Genome assemblies datasets I found online - 
- NCBI - https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/
+ - NCBI - https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/
  
 Variant calling - https://github.com/sanger-tol/variantcalling/tree/main
-  deepvariant - https://github.com/google/deepvariant
-  PSMC - https://github.com/lh3/psmc
-  RaisD - https://github.com/alachins/raisd
-  SnpEff - https://github.com/pcingola/SnpEff
-  Info on SnpEff and SnpSift
+ - deepvariant - https://github.com/google/deepvariant
+ - PSMC - https://github.com/lh3/psmc
+ - RaisD - https://github.com/alachins/raisd
+ - SnpEff - https://github.com/pcingola/SnpEff
+   
+Info on SnpEff and SnpSift
   
   
 
