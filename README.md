@@ -51,7 +51,7 @@ nextflow run main.nf --fasta <assembly.fasta> [--chunk_size 5000]
 - Bedtools -  https://bedtools.readthedocs.io/en/latest/  
 - bedtobigBed - https://www.encodeproject.org/software/bedToBigBed/
 - Some Genome assemblies datasets I found online - NCBI - https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/
-- Datasets - https://github.com/orgs/sanger-tol/projects/3/views/23?filterQuery=status%3ADone&sortedBy%5Bdirection%5D=asc&sortedBy%5BcolumnId%5D=Repository&sortedBy%5Bdirection%5D=asc&sortedBy%5BcolumnId%5D=Status&pane=issue&itemId=67748883&issue=sanger-tol%7Cvariantcalling%7C81
+- [View Done Datasets](https://github.com/orgs/sanger-tol/projects/3/views/23?filterQuery=status%3ADone&sortedBy%5Bdirection%5D=asc&sortedBy%5BcolumnId%5D=Repository&sortedBy%5Bdirection%5D=asc&sortedBy%5BcolumnId%5D=Status&pane=issue&itemId=67748883&issue=sanger-tol%7Cvariantcalling%7C81)
 
 ### Sequence compostion - 
 https://github.com/sanger-tol/sequencecomposition
