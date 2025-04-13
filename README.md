@@ -33,7 +33,7 @@ nextflow run main.nf --fasta <assembly.fasta> [--chunk_size 5000]
 - `results/tidk_find/`: Clade-specific repeats.  
 - `results/telo_finder/`: Motif-specific regions.
 
-# Flowchart - 
+# Overall Flowchart - 
 ![Flowchart](Flowchart.png)
  
 
