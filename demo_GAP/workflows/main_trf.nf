@@ -27,4 +27,4 @@ workflow {
 }  
 
 
-// nextflow run main.nf --help  # List all parameters  
+// nextflow run main.nf --help  # Listing all parameters  

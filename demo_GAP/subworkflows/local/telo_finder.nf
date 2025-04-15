@@ -6,7 +6,7 @@ include { TABIX_BGZIPTABIX } from '../../modules/nf-core/tabix/bgziptabix'
 workflow TELO_FINDER {  
     take:  
     reference_tuple  // [val(meta), path(fasta)]  
-    teloseq          // Telomeric_motif (Eg.- "TTAGGG")  
+    teloseq          // Telomeric_motif (Eg-"TTAGGG")  
 
     main:  
     FIND_TELOMERE_REGIONS(reference_tuple, teloseq)  

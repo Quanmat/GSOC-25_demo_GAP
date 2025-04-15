@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     zlib1g-dev \
     gnuplot
 
-# Install R packages for plotting
+# Install R packages (for plotting)
 RUN Rscript -e "install.packages('ggplot2', repos='https://cran.r-project.org')"
 
 # Install RAiSD

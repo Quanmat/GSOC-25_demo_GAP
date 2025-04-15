@@ -25,8 +25,6 @@ RUN chmod +x /usr/local/bin/*.py
 
 
 
-
-
 ######## ltrdigest - 
 
 FROM nfcore/base:2.0  

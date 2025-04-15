@@ -1,5 +1,5 @@
 {% set name = "trash" %}  
-{% set version = "1.0" %}  # Will Update to match TRASH's latest release  (v2)
+{% set version = "1.0" %}  # Will Update to match TRASH's latest release (v2)
 
 package:  
   name: {{ name }}  

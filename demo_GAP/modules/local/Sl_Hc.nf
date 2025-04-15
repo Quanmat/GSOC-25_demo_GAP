@@ -9,10 +9,10 @@ bedtools makewindows \
 
 //   Map Heterozygous Windows
 
-// # Convert ROH output to BED of heterozygous regions  
+// # Converting ROH output to BED of heterozygous regions  
 awk 'NR>1 && $6 != "HOM" {print $2 "\t" $3 "\t" $4}' sample.roh > het_regions.bed  
 
-// # Count overlaps per window  
+// # Counting overlaps per window  
 bedtools map \
   -a genome_windows.bed \  
   -b het_regions.bed \  
