@@ -52,5 +52,8 @@ Variant Calling - https://github.com/sanger-tol/variantcalling/tree/main
 
 #### Additional Clarifications - 
 - [Population Genomics](https://github.com/orgs/sanger-tol/projects/3/views/23?filterQuery=status%3ADone&pane=issue&itemId=67748878&issue=sanger-tol%7Cvariantcalling%7C65)
-- [Variant calling on long read data](https://github.com/orgs/sanger-tol/projects/3/views/23?filterQuery=status%3ADone&pane=issue&itemId=67748881&issue=sanger-tol%7Cvariantcalling%7C79)
+- [Variant calling on long read data](https://github.com/orgs/sanger-tol/projects/3/views/23?filterQuery=status%3ADone&pane=issue&itemId=67748881&issue=sanger-tol%7Cvariantcalling%7C79) 
+
+#### PR Assigned - 
+ - [#145](https://github.com/sanger-tol/blobtoolkit/issues/145)
 
