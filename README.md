@@ -48,7 +48,7 @@ Variant Calling - https://github.com/sanger-tol/variantcalling/tree/main
  - RaisD - https://github.com/alachins/raisd
  - SnpEff - https://github.com/pcingola/SnpEff
    - Info on SnpEff and SnpSift: https://pcingola.github.io/SnpEff/snpeff/introduction/ 
- - Samtools RoH - https://samtools.github.io/bcftools/howtos/roh-calling.html
+ - Samtools RoH -  https://samtools.github.io/bcftools/howtos/roh-calling.html
 
 #### Additional Clarifications - 
 - [Population Genomics](https://github.com/orgs/sanger-tol/projects/3/views/23?filterQuery=status%3ADone&pane=issue&itemId=67748878&issue=sanger-tol%7Cvariantcalling%7C65)
